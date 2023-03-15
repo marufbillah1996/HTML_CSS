@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evidence</title>
+	<link rel="stylesheet" href="Styles/style.css"/>
+	<style>
+		footer{
+			margin-top:650px;
+		}
+	</style>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script>
+		$(()=>{
+			$(".hb").click((evt)=>{
+				$(".menu").toggleClass("active");
+				evt.stopPropagation();
+			})
+		})
+	</script>
+</head>
+<body>
+	<header>
+		
+		<nav class="nav">
+			<div class="hb" style="padding:10px 8px;color:white">&#9776;</div>
+			
+			<div class="logo">LOGO</div>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="cart.html">Cart</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Item</th>
+					<th>Unit Price</th>
+					<th>Quantity</th>
+					<th>Sub-price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Bandarban</td>
+					<td>$12.0</td>
+					<td>2</td>
+					<td>24</td>
+				</tr>
+				<tr>
+					<td>Bandarban</td>
+					<td>$12.0</td>
+					<td>2</td>
+					<td>24</td>
+				</tr>
+				<tr>
+					<td>Bandarban</td>
+					<td>$12.0</td>
+					<td>2</td>
+					<td>24</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3"></td>
+					<td>72</td>
+				</tr>
+			</tfoot>
+		</table>
+	</section>
+	<footer>
+		<span>&copy;--2022</span>
+	</footer>
+</body>
+</html>

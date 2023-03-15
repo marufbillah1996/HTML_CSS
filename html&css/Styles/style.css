@@ -1,0 +1,121 @@
+html,*{
+	margin:0;
+	padding:2px;
+	border-size:border-box;
+	border-radius:.25rem;
+}
+body{
+	font-family:"Segoe UI",Tahoma,sans-sherif;
+	background-color:lightgray;
+}
+.nav{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	margin:.25rem;
+	background-color:lightskyblue;
+}
+.logo{
+	font-size:2.5rem;
+	font-width:700;
+	padding:12px 8px;
+	color:white;
+	text-align:center;
+	width:230px;
+}
+.nav ul{
+	display:flex;
+	flex-direction:row;
+	list-style:none;
+}
+.nav ul li{
+	width:123px;
+}
+.nav ul li a{
+	display:block;
+	color:white;
+	text-decoration:none;
+	font-width:200;
+	font-size:1.15rem;
+	text-align:center;
+	
+}
+.nav ul li a:hover{
+	background-color:lightgray;
+	border-radius:.25rem;
+}
+.hb{
+	display:none;
+}
+/*products*/
+.items{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;	
+}
+.items-list{
+	display:flex;
+	flex-direction:column;
+	border:solid 1px #fff;
+	width:200px;
+	margin:10px;
+}
+.items-list > img{
+	width:200px;
+}
+.items-name{
+	font-size:1.5rem;
+	
+}
+.items-price{
+	display:inline-block;
+	text-align:right;
+	font-style:italic;
+	font-weight:500;
+}
+
+/*cart*/
+.table{
+	border:solid 1px #fff;
+	border-collapse:collapse;
+	width:75%;
+	margin:10px auto;
+}
+th,td{
+	padding:5px;
+	border:solid 1px #fff;
+}
+
+@media screen and (max-width:1020px){
+	.nav ul{
+		position:fixed;
+		display:flex;
+		flex-direction:column;
+		width:260px;
+		top:83px;
+		left:-100%;
+		background-color:lightskyblue;
+		border-radius:.25rem;
+		height:calc(100vh - 83px);
+		
+		margin:.6rem;
+	}
+	.nav ul.active li{
+		width:calc(100% - 1.5rem);
+		margin:.5rem;
+	}
+	ul.active{
+		left:0;
+	}
+	ul.active li a{
+		text-align:left;
+		padding:10px 8px;
+	}
+	.hb{
+		display:block;
+		cursor:pointer;
+	}
+	
+}
